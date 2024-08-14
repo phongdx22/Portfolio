@@ -1,0 +1,274 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+/* SECTION 1: Introduction */
+.introduction-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    align-items: center;
+    gap: 40px;
+}
+
+.introduction-section .text {
+    flex: 5;
+}
+
+.introduction-section .text h2 {
+    font-size: 45px;
+}
+
+.introduction-section .text .links {
+    margin-top: 25px;
+}
+
+.introduction-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.introduction-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.introduction-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.introduction-section .headshot img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+/* SECTION 2: Skills */
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills-section text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.skills-section .cells .cell span {
+    font-size: 18px;
+}
+
+.skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+/* SECTION 3: Projects */
+.projects-section {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.projects-section h2 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+.projects-section .group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.project p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project li {
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+    /* SECTION 1: Introduction*/
+    .introduction-section .text h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 740px) {
+    /* SECTION 1: Introduction*/
+    .introduction-section {
+        flex-direction: column-reverse;
+    }
+
+    .introduction-section .headshot img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* NAVBAR */
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+    /* SECTION 1: Introduction*/
+    .introduction-section {
+        padding: 0 20px;
+    }
+
+    .introduction-section .text h2 {
+        font-size: 30px;
+    }
+
+    /* SECTION 2: Skills */
+    .skills-section {
+        padding: 0 20px;
+    }
+
+    .skills-section .cells .cell span {
+        font-size: 16px;
+    }
+}
