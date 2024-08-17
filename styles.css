@@ -255,11 +255,94 @@ nav .right a span {
     text-decoration: underline;
 }
 
+/* SECTION 3: Past Education */
+.education-section {
+    padding: 50px;
+    background-color: #eef0f3; /* Softer background color */
+    text-align: center;
+}
+
+.education-section h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+.education-group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.education {
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 5px solid var(--link-color); /* Colored border for emphasis */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width */
+    text-align: left;
+}
+
+.education h3 {
+    color: var(--text-color);
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: capitalize; /* Capitalize each word */
+}
+
+.education p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6; /* Increased line-height for readability */
+}
+
 @media (max-width: 850px) {
     /* SECTION 1: Introduction*/
     .introduction-section .text h2 {
         font-size: 35px;
     }
+}
+
+/* SECTION 4: Contact */
+.contact-section {
+    padding: 50px;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--link-color);
+}
+
+.contact-info a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 740px) {
@@ -310,89 +393,4 @@ nav .right a span {
     .skills-section .cells .cell span {
         font-size: 16px;
     }
-}
-
-/* SECTION 3: Past Education */
-.education-section {
-    padding: 50px;
-    background-color: #eef0f3; /* Softer background color */
-    text-align: center;
-}
-
-.education-section h2 {
-    font-size: 35px;
-    margin-bottom: 40px;
-    color: var(--text-color);
-}
-
-.education-group {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 900px;
-    margin: 0 auto;
-    align-items: center;
-}
-
-.education {
-    background-color: #ffffff;
-    padding: 20px;
-    border-left: 5px solid var(--link-color); /* Colored border for emphasis */
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Full width */
-    text-align: left;
-}
-
-.education h3 {
-    color: var(--text-color);
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-transform: capitalize; /* Capitalize each word */
-}
-
-.education p {
-    color: #444;
-    font-size: 16px;
-    line-height: 1.6; /* Increased line-height for readability */
-}
-
-
-
-/* SECTION 4: Contact */
-.contact-section {
-    padding: 50px;
-    background-color: var(--background-color);
-    text-align: center;
-}
-
-.contact-section h2 {
-    font-size: 35px;
-    margin-bottom: 20px;
-    color: var(--text-color);
-}
-
-.contact-section p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.contact-info p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.contact-info i {
-    margin-right: 10px;
-    color: var(--link-color);
-}
-
-.contact-info a {
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
 }
