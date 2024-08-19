@@ -87,7 +87,7 @@ nav .right a span {
     padding-bottom: 50px;
     align-items: center;
     gap: 40px;
-    background-color: #ff7a7a;
+    background-color: #0099ff;
 }
 
 .introduction-section .text {
@@ -200,7 +200,7 @@ nav .right a span {
 .projects-section {
     padding: 50px 0;
     padding-top: 80px;
-    background-color: #00ffb3; /* Light background for contrast */
+    background-color: #0099ff; /* Light background for contrast */
 }
 
 .projects-section h2 {
@@ -266,7 +266,7 @@ nav .right a span {
 /* SECTION 3: Past Education */
 .education-section {
     padding: 50px;
-    background-color: #ffb5f5; /* Softer background color */
+    background-color: #aaffc5; /* Softer background color */
     text-align: center;
 }
 
@@ -318,7 +318,7 @@ nav .right a span {
 /* SECTION 4: Contact */
 .contact-section {
     padding: 50px;
-    background-color: var(--background-color);
+    background-color: #aaffc5;
     text-align: center;
 }
 
