@@ -984,3 +984,27 @@ PROJECT PAGE
 .fullscreen-btn:hover {
     background: #444;
 }
+
+.project-details-split {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.detail-column {
+    flex: 1;
+}
+
+.detail-column h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* For mobile: stack them on top of each other */
+@media (max-width: 600px) {
+    .project-details-split {
+        flex-direction: column;
+    }
+}
